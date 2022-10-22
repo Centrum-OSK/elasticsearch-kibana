@@ -13,7 +13,7 @@ elasticsearch.username: kibana_system
 elasticsearch.password: ${KIBANA_SYSTEM_PASSWORD}
 #
 #xpack.fleet.agents.fleet_server.hosts: [ 'http://fleet:8220' ]
-#xpack.fleet.agents.elasticsearch.hosts: [ 'http://elasticsearch:9200' ]
+xpack.fleet.agents.elasticsearch.hosts: [ 'http://elasticsearch:9200' ]
 #
 #xpack.fleet.packages:
 #  - name: fleet_server
