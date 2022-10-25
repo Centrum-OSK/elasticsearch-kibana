@@ -35,6 +35,7 @@ services:
       discovery.type: single-node
     networks:
       - elk
+      - ext
 
   logstash:
     build:
@@ -54,6 +55,7 @@ services:
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
     networks:
       - elk
+      - ext
     depends_on:
       - elasticsearch
 
@@ -72,13 +74,16 @@ services:
       KIBANA_FLEET_SETUP: '1'
     networks:
       - elk
+      - ext
     depends_on:
       - elasticsearch
 
 networks:
   elk:
     driver: bridge
-
+  ext:
+    name: external
+    external: true
 volumes:
   setup:
   elasticsearch:
