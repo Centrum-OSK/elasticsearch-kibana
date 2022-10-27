@@ -16,7 +16,7 @@ secret_management.encryption_keys: ["sdsd"]
 ent_search.listen_host: 0.0.0.0
 
 # URL at which users reach Enterprise Search / Kibana
-ent_search.external_url: http://enterprise-search:3002
+ent_search.external_url: http://38.242.154.58:3002
 kibana.host: http://kibana:5601
 
 # Elasticsearch URL and credentials
