@@ -6,7 +6,7 @@
 ## --------------------- REQUIRED ---------------------
 
 # Encryption keys to protect application secrets.
-secret_management.encryption_keys: sdsd
+secret_management.encryption_keys: ["sdsd"]
   # add encryption keys below
   #- add encryption keys here
 
