@@ -10,6 +10,8 @@ monitoring.ui.container.elasticsearch.enabled: true
 ## X-Pack security credentials
 #
 
+enterpriseSearch.host: 'http://enterprise-search:3002'
+
 elasticsearch.username: kibana_system
 elasticsearch.password: ${KIBANA_SYSTEM_PASSWORD}
 
