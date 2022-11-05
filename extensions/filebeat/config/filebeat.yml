@@ -1,6 +1,11 @@
-## Filebeat configuration
-## https://github.com/elastic/beats/blob/main/deploy/docker/filebeat.docker.yml
-#
+
+
+filebeat.inputs:
+  - type: log
+    paths:
+      - 'var/log/*/*.log'
+
+
 
 filebeat.config:
   modules:
